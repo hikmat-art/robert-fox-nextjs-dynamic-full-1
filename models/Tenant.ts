@@ -1,0 +1,1 @@
+export interface Tenant { name: string; subscriptionTier: string; }
