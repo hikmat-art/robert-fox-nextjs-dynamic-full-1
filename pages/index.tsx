@@ -1,27 +1,28 @@
-import Layout from "../components/Layout";
-
 export default function Home() {
   return (
-    <Layout>
-      <header>
-        <h1>Robert Fox Portfolio</h1>
-        <p>Full-Stack Web Designer & Developer</p>
-      </header>
-      <section>
-        <h2>About Me</h2>
-        <p>I am a creative web designer with a focus on responsive, modern designs.</p>
+    <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center text-center p-6">
+      <h1 className="text-4xl font-bold text-blue-600">Robert Fox Portfolio</h1>
+      <p className="mt-4 text-lg text-gray-700">Full-Stack Web Designer & Developer</p>
+
+      <section className="mt-8 max-w-2xl bg-white shadow-md rounded-lg p-6">
+        <h2 className="text-2xl font-semibold mb-2">About Me</h2>
+        <p className="text-gray-600">
+          I am a creative web designer with a focus on responsive, modern designs.
+        </p>
       </section>
-      <section>
-        <h2>Projects</h2>
-        <ul>
-          <li>Project 1 – Business Website</li>
-          <li>Project 2 – E-commerce Store</li>
-          <li>Project 3 – Personal Portfolio</li>
+
+      <section className="mt-8 max-w-2xl bg-white shadow-md rounded-lg p-6">
+        <h2 className="text-2xl font-semibold mb-2">Projects</h2>
+        <ul className="list-disc pl-6 text-gray-700">
+          <li>Business Website</li>
+          <li>E-commerce Store</li>
+          <li>Personal Portfolio</li>
         </ul>
       </section>
-      <footer>
-        <p>Contact: robert.fox@example.com</p>
+
+      <footer className="mt-10 text-gray-500">
+        Contact: robert.fox@example.com
       </footer>
-    </Layout>
+    </div>
   );
 }
